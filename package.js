@@ -1,6 +1,6 @@
 Package.describe({
   name: 'baysao:meteor-webix',
-  version: '0.1.0-1',
+  version: '0.1.0-2',
   // Brief, one-line summary of the package.
   summary: 'Meteor Webix',
   // URL to the Git repository containing the source code for this package.
@@ -12,8 +12,9 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
-
+  // api.use('iron:router');
   api.addFiles(['./codebase/webix.js', './codebase/webix.css'], 'client');
+  api.addFiles(['./lib/core.js', './lib/menu.js'], 'client');
   api.addAssets([
   './codebase/fonts/fontawesome-webfont.svg',
   './codebase/fonts/fontawesome-webfont.ttf',
@@ -27,5 +28,8 @@ Package.onUse(function(api) {
   './codebase/fonts/PTS-bold.ttf'
     ], 'client');
   api.export('webix', 'client');
+  api.export('WebixRouter', 'client');
+  api.export('WebixMenuHelper', 'client');
+  api.export('WebixViews', 'client');
 });
 
