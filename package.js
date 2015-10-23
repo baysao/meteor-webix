@@ -1,6 +1,6 @@
 Package.describe({
   name: 'baysao:meteor-webix',
-  version: '0.1.0-3',
+  version: '0.1.0-4',
   // Brief, one-line summary of the package.
   summary: 'Meteor Webix',
   // URL to the Git repository containing the source code for this package.
@@ -13,7 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
   api.addFiles([
-    './codebase/webix_debug.js',
+    // './codebase/webix_debug.js',
+    './codebase/webix.js',
     './codebase/webix.css'
   ], 'client');
   //api.addFiles(['./lib/core.js', './lib/menu.js'], 'client');
