@@ -12,24 +12,26 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
-  // api.use('iron:router');
-  api.addFiles(['./codebase/webix.js', './codebase/webix.css'], 'client');
-  api.addFiles(['./lib/core.js', './lib/menu.js'], 'client');
+  api.addFiles([
+    './codebase/webix_debug.js',
+    './codebase/webix.css'
+  ], 'client');
+  //api.addFiles(['./lib/core.js', './lib/menu.js'], 'client');
   api.addAssets([
   './codebase/fonts/fontawesome-webfont.svg',
   './codebase/fonts/fontawesome-webfont.ttf',
-  './codebase/fonts/PTS-bold.eot',
-  './codebase/fonts/PTS-webfont.ttf',
-  './codebase/fonts/fontawesome-webfont.woff',
-  './codebase/fonts/fontawesome-webfont.eot',
-  './codebase/fonts/PTS-webfont.woff',
-  './codebase/fonts/PTS-bold.woff',
-  './codebase/fonts/PTS-webfont.eot',
-  './codebase/fonts/PTS-bold.ttf'
+    './codebase/fonts/fontawesome-webfont.woff',
+    './codebase/fonts/fontawesome-webfont.eot',
+    './codebase/fonts/PTS-webfont.ttf',
+    './codebase/fonts/PTS-webfont.woff',
+    './codebase/fonts/PTS-webfont.eot',
+    './codebase/fonts/PTS-bold.eot',
+    './codebase/fonts/PTS-bold.woff',
+    './codebase/fonts/PTS-bold.ttf'
     ], 'client');
   api.export('webix', 'client');
-  api.export('WebixRouter', 'client');
-  api.export('WebixMenuHelper', 'client');
-  api.export('WebixViews', 'client');
+  //api.export('WebixRouter', 'client');
+  //api.export('WebixMenuHelper', 'client');
+  //api.export('WebixViews', 'client');
 });
 
