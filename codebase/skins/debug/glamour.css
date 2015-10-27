@@ -264,6 +264,9 @@ x\:ui {
   z-index: 2;
   left: 0px;
 }
+.webix_resizer.webix_disabled_view {
+  cursor: default;
+}
 .webix_resizer_vy {
   cursor: n-resize;
   margin-top: 0px !important;

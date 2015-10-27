@@ -1,6 +1,6 @@
 Package.describe({
   name: 'baysao:meteor-webix',
-  version: '0.1.0-4',
+  version: '0.1.0-6',
   // Brief, one-line summary of the package.
   summary: 'Meteor Webix',
   // URL to the Git repository containing the source code for this package.
@@ -19,8 +19,8 @@ Package.onUse(function(api) {
   ], 'client');
   //api.addFiles(['./lib/core.js', './lib/menu.js'], 'client');
   api.addAssets([
-  './codebase/fonts/fontawesome-webfont.svg',
-  './codebase/fonts/fontawesome-webfont.ttf',
+    './codebase/fonts/fontawesome-webfont.svg',
+    './codebase/fonts/fontawesome-webfont.ttf',
     './codebase/fonts/fontawesome-webfont.woff',
     './codebase/fonts/fontawesome-webfont.eot',
     './codebase/fonts/PTS-webfont.ttf',
